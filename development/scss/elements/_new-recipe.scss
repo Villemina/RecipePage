@@ -1,0 +1,143 @@
+.new-recipe {
+  height: 80%;
+  width: 80%;
+  background-color: white;
+  border: 2px dotted grey;
+  display: block;
+  font-family: $font-base;
+  color: $color-nav;
+  position: absolute;
+  top: 160px;
+  left: 320px;
+  padding: 30px;
+
+  hr {
+    border-bottom: 1px solid $color-font-icon;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $color-buttons;
+    }
+
+    button {
+      height: 40px;
+      border: transparent;
+      font-weight: 500;
+      padding: 0 20px;
+      background-color: $color-buttons;
+
+      a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__box {
+    height: 450px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    .box__row {
+      display: flex;
+      gap: 5%;
+
+      &__col {
+        width: 50%;
+      }
+    }
+
+    .box__row__lists {
+      margin-top: auto;
+    }
+  }
+
+  .new-recipe__row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    &__col1 h3 {
+      margin-bottom: 20px;
+    }
+
+    &__col2 {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 70%;
+      margin-right: 10%;
+      margin-left: 1%;
+
+      input {
+        height: 30px;
+        padding: 10px;
+      }
+
+      textarea {
+        height: 72px;
+        padding: 10px;
+      }
+    }
+  }
+
+  i[data-unicode="f0fe"] {
+    color: $color-success;
+    font-size: 28px;
+  }
+
+  i[data-unicode="f2ed"] {
+    color: $color-warning;
+  }
+
+  i[data-unicode="f044"] {
+    color: $color-trash;
+  }
+
+  &__add-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    textarea {
+      height: 72px;
+      width: 90%;
+      padding: 10px;
+    }
+
+    input {
+    height: 30px;
+    width: 90%;
+    padding: 10px;
+    }
+  }
+
+  .instructions__list {
+    list-style-type: decimal;
+  }
+
+  .ingredients__list {
+    list-style-type: disc;
+  }
+}
+
+.clickable {
+  cursor: pointer;
+}

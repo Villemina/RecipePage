@@ -1,0 +1,48 @@
+.newsletter {
+  background-color: $color-nav;
+
+  &-container {
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__form {
+  }
+
+  input {
+    height: 40px;
+    border: transparent;
+    font-weight: 500;
+
+    &:first-of-type {
+      width: 300px;
+      padding: 10px;
+
+      &:focus {
+        outline: none;
+        border: 2px solid $color-buttons;
+      }
+    }
+
+    &:last-of-type {
+      padding: 10px 45px;
+      background-color: $color-buttons;
+      cursor: pointer;
+      color: white;
+      font-size: $font-size-base;
+      font-weight: bold;
+
+      &:hover {
+        background-color: rgb(255, 123, 36);
+        transition: 0.15s;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    color: $color-background;
+  }
+}

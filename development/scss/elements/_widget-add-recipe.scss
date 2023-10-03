@@ -1,0 +1,101 @@
+.widget-all {
+  height: 25%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  text-align: center;
+  font-family: $font-base;
+  position: absolute;
+  top: 160px;
+  left: 320px;
+
+  .widgets-add-items-container {
+    display: flex;
+    gap: 25px;
+    color: $color-success;
+  }
+  .widgets-add-items{
+    height: 180px;
+    width: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-backgroundwhite;
+    border: 2px dotted $color-success;
+    gap: 20px;
+  }
+  .widget-link{
+    text-decoration: none;
+    color: $color-success;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .fa-regular{
+  font-size: 65px;
+  }
+
+  .notifications {
+    height: 180px;
+    width: 100%;
+    display: block;
+
+    .notification {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: white;
+      border: 2px dotted;
+      height: calc((100% - 20px) / 3);
+
+      &-icon {
+        font-size: 30px;
+      }
+
+      .icon-x {
+        margin-bottom: 16px;
+      }
+
+      .notification__message {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      &:nth-of-type(2) {
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+
+      .fa-rectangle-xmark {
+        align-self: flex-start;
+      }
+
+      p {
+        margin-left: 10px;
+      }
+
+      i:last-of-type {
+        display: flex;
+        justify-self: flex-end;
+      }
+    }
+
+    &__recipes {
+      color: $color-info;
+    }
+
+    &__add-schedule {
+      color: $color-warning;
+    }
+
+    &__message {
+      color: $color-success;
+    }
+  }
+}

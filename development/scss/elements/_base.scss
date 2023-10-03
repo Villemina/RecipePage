@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-base;
+  background-color: $color-background;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.hide-element {
+  visibility: hidden;
+  //display: none;
+}
+
+header:first-child  {
+  cursor: pointer;
+}

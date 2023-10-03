@@ -1,0 +1,86 @@
+body {
+  background-image: url("./image/images/dashboard-images.png");
+  background-repeat: repeat;
+}
+
+.header {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  &__login_data {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+  }
+
+  &__name {
+    font-family: $font-base;
+    font-weight: 500;
+
+    color: $color-background;
+  }
+
+  &__logout {
+    font-size: 16px;
+    color: $color-nav;
+
+    &:hover {
+      color: $color-buttons;
+    }
+
+    span {
+      height: 16px;
+      margin-right: 10px;
+      border-right: 1px solid $color-nav;
+    }
+  }
+
+  &__user {
+    position: relative;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 3px solid $color-buttons;
+    overflow: hidden;
+
+    .user__icon {
+      position: absolute;
+      top: 21px;
+      right: 4px;
+
+    }
+  }
+
+}
+
+.menu {
+  width: 300px;
+  height: 100vh;
+  background-color: $color-nav;
+
+  .menu__link {
+    display: block;
+    position: relative;
+    color: $color-background;
+    font-weight: 500;
+    padding: 30px 0 30px 30px;
+    font-size: 24px;
+
+  }
+
+  .menu__link:hover {
+    border-left: 10px solid $color-buttons;
+    color: white;
+    .fa-angle-right {
+      visibility: visible;
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+
+.fa-angle-right {
+  visibility: hidden;
+}

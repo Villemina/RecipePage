@@ -1,0 +1,41 @@
+.about-app {
+  &-container {
+    display: flex;
+    gap: 130px;
+    margin: 100px auto;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: $color-nav;
+    font-family: $font-base;
+    text-align: center;
+
+    &__icon {
+      font-family: "Font Awesome 6 Free";
+      font-size: 64px;
+      font-weight: 900;
+      color: $color-font-icon;
+      margin-bottom: 20px;
+    }
+
+    .icon-check::before {
+      content: "\f00c";
+    }
+
+    .icon-clock::before {
+      content: "\f017";
+      font-weight: 400;
+    }
+
+    .icon-list::before {
+      content: "\f03a";
+    }
+
+    &__text {
+      font-size: 24px;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.carousel {
+  width: 100vw;
+  height: 500px ;
+  p {
+    text-align: center;
+  }
+
+  .container {
+    width: 90vw;
+  }
+  &__wrapper {
+    height: 100%;
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }&__arrow {
+     border-top: 4px solid black;
+     border-right: 4px solid black;
+     height: 30px;
+     width: 30px;
+     &:hover {
+       cursor: pointer;
+       border-color: $color-buttons;
+       transition: 0.5s;
+     }
+     &.arrow-angle-right {
+       transform: rotate(45deg);
+     }
+     &.arrow-angle-left {
+       transform: rotate(225deg);
+     }
+   }
+  &__item {
+     color:$color-header;
+     display: none;
+  &.active {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+  }
+   }
+}

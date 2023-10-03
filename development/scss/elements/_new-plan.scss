@@ -1,0 +1,100 @@
+.new__plan {
+  height:90%;
+  width: 80%;
+  background-color: white;
+  border: 2px dotted grey;
+  display: block;
+  font-family: $font-base;
+  color: $color-nav;
+  position: absolute;
+  top: 160px;
+  left: 320px;
+  padding: 20px;
+
+  hr {
+    border-bottom: 1px solid $color-font-icon;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    h3 {
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $color-buttons;
+    }
+
+    button {
+      height: 40px;
+      border: transparent;
+      font-weight: 500;
+      padding: 0 20px;
+      background-color: $color-buttons;
+
+      a {
+        color: white;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .new__plan__name {
+    display: flex;
+
+    h3 {
+      padding: 10px;
+      font-size: 30px;
+    }
+
+    .name__placeholder {
+      width: 850px;
+      height: 30px;
+      margin: 10px;
+    }
+
+    .description__placeholder {
+      width: 850px;
+      height: 90px;
+      margin: 10px 10px 10px 40px;
+    }
+
+    .week__placeholder {
+      width: 30px;
+      height: 30px;
+      margin: 10px
+    }
+  }
+
+  .new__plan__table {
+    margin-left: 180px;
+  }
+
+  .plan__meal {
+    font-size: 26px;
+    color: $color-nav;
+    padding: 0 50px;
+    margin-bottom: 20px;
+  }
+  .plan__days__container{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    margin-right: 20px;
+
+  .plan__days {
+    text-align: right;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: $color-nav;
+  }
+    input {
+      width: 170px;
+      color: $color-font-icon;
+      margin:  2px 6px;
+    }
+  }
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Zaplanuj Jedzonko</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="./scss/app.scss"/>
+</head>
+<body>
+<header class="header">
+    <h1 class="logo" id="app-logo">Zaplanuj <span class="logo_color">Jedzonko</span></h1>
+    <div class="header__login_data">
+        <a class="header__name">Imię</a>
+        <p class="header__logout "><span></span>wyloguj</p>
+        <div class="header__user">
+            <i class="fa-solid fa-user fa-2xl user__icon" style="color: #f06d00;"></i>
+        </div>
+    </div>
+</header>
+<section class="menu">
+    <a href="app.html" class="menu__link">
+        Pulpit
+        <i class="fa-solid fa-angle-right" style="color: #f06d00;"></i>
+    </a>
+    <a href="recipes.html" class="menu__link">
+        Przepisy
+        <i class="fa-solid fa-angle-right" style="color: #f06d00;"></i>
+    </a>
+    <a href="schedules.html" class="menu__link">
+        Plany
+        <i class="fa-solid fa-angle-right" style="color: #f06d00;"></i></a>
+</section>
+<section class="welcome-form">
+    <div class="welcome-form-container">
+        <h2 class="welcome-greeting">Witaj,</h2>
+        <h3 class="welcome-greeting-primary">wygląda na to, że jesteś tutaj <br>
+            pierwszy raz!</h3>
+        <form class="welcome-form-imput">
+            <input type="text" class="welcome-input" id="name" name="name"
+                   placeholder=" tutaj wpisz jak masz na imię"><br>
+            <button class="button-secondary">Gotowe!</button>
+        </form>
+        <p class="welcome-greeting-secondary">Podaj nam imię, a my zorganizujemy <br>dla Ciebie naszą aplikację :)</p>
+    </div>
+</section>
+<section class="widget-all">
+    <div class="widgets-add-items-container">
+        <div class="widgets-add-items">
+            <a href="recipes.html" class="widget-link">
+                <i class="fa-regular fa-square-plus"></i>
+                przepis
+            </a>
+        </div>
+        <div class="widgets-add-items">
+            <a href="schedules.html" class="widget-link">
+                <i class="fa-regular fa-square-plus"></i>
+                plan
+            </a>
+        </div>
+        <div class="widgets-add-items">
+            <a href="" class="widget-link">
+                <i class="fa-regular fa-square-plus"></i>
+                zakupy
+            </a>
+        </div>
+    </div>
+
+    <div class="notifications">
+        <div class="notification notifications__recipes">
+            <div class="notification__message">
+                <i class="fa-solid fa-circle-info notification-icon" data-unicode="f05a"></i>
+                <p>Masz już <span>&#60span&#62</span> przepisów, nieźle!</p>
+            </div>
+            <div class="icon-x">
+                <i class="fa-solid fa-rectangle-xmark" data-unicode="f410"></i>
+            </div>
+        </div>
+
+        <div class="notification notifications__add-schedule">
+            <div class="notification__message">
+                <i class="fa-solid fa-circle-exclamation notification-icon" data-unicode="f06a"></i>
+                <p>Pamiętaj, aby dodać plan!</p>
+            </div>
+            <div class="icon-x">
+                <i class="fa-solid fa-rectangle-xmark" data-unicode="f410"></i>
+            </div>
+        </div>
+
+        <div class="notification notifications__message">
+            <div class="notification__message">
+                <i class="fa-solid fa-circle-check notification-icon" data-unicode="f058"></i>
+                <p>Świetnie, że jesteś! Udanego planowania i smacznego! :)</p>
+            </div>
+            <div class="icon-x">
+                <i class="fa-solid fa-rectangle-xmark" data-unicode="f410"></i>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="schedule__container">
+        <h3 class="week__plan__title">Twój plan na {nr_tygodnia} tydzień:</h3>
+        <div class="week__plan__table">
+            <table class="days__container">
+                <thead class ='days__container_header'>
+                <tr>
+                <th class="day__of__week">Poniedziałek</th>
+                <th class="day__of__week">Wtorek</th>
+                <th class="day__of__week">Środa</th>
+                <th class="day__of__week">Czwartek</th>
+                <th class="day__of__week">Piątek</th>
+                <th class="day__of__week">Sobota</th>
+                <th class="day__of__week">Niedziela</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>git
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                    <td class="week__meal">śniadanie</td>
+                </tr>
+                <tr>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                    <td class="week__meal">drugie <br>śniadanie</td>
+                </tr>
+                <tr>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+                    <td class="week__meal">zupa</td>
+
+                </tr>
+                <tr>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                    <td class="week__meal">drugie <br>danie</td>
+                </tr>
+                <tr>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                    <td class="week__meal">kolacja</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="meal__plan_navi">
+            <span class="meal__plan_navi_el-first">poprzedni</span>
+            <span class="meal__plan_navi_el-second">następny</span>
+        </div>
+    </div>
+</section>
+
+<section class="new-recipe">
+    <div class="new-recipe__header">
+        <h3>Nowy przepis</h3>
+        <button class="button-secondary button-save" id="button-save"><a href="recipes.html">Zapisz i zamknij</a></button>
+    </div>
+    <hr>
+
+    <div class="new-recipe__row">
+        <div class="new-recipe__row__col1">
+            <h3>Nazwa przepisu</h3>
+            <h3>Opis przepisu</h3>
+        </div>
+        <div class="new-recipe__row__col2">
+            <input type="text" id="recipe-name">
+            <textarea name="text" id="recipe-desc"  rows="3" cols="1"></textarea>
+        </div>
+    </div>
+    <div class="new-recipe__box">
+        <div class="box__row">
+            <div class="box__row__col">
+                <h3>Instrukcje</h3>
+                <hr>
+                <div class="new-recipe__add-instruction new-recipe__add-text">
+                    <textarea name="text" id="instruction-desc" rows="3" cols="1" ></textarea>
+                    <i class="fa-solid fa-square-plus clickable" id ="add-instruction" data-unicode="f0fe" onclick=""></i>
+                </div>
+            </div>
+            <div class="box__row__col">
+                <h3>Składniki</h3>
+                <hr>
+                <div class="new-recipe__add-ingredient new-recipe__add-text" id="ingredients">
+                    <input type="text" id="ingredients-desc">
+                    <i class="fa-solid fa-square-plus clickable" id="add-ingredient" data-unicode="f0fe" onclick=""></i>
+                </div>
+            </div>
+        </div>
+        <div class="box__row box__row__lists">
+            <div class="box__row__col">
+                <ol class="instructions__list" id="instruction-list">
+
+                </ol>
+            </div>
+            <div class="box__row__col">
+                <ol class="ingredients__list" id="ingredients-list">
+
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="./js/app.js"></script>
+</body>
+</html>
